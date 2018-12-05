@@ -21,7 +21,7 @@ begin
 	if(rising_edge(MCLK)) then 
 		Counter <= Counter + 1;
 		if(counter < x"5ffffff") then 
-			Temp <= '1'; -- saniye hýzý
+			Temp <= '1'; -- time velocity
 		else 
 			Counter <= x"0000000";
 			Temp <='0';
